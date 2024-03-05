@@ -7,3 +7,5 @@ Este repositório tem como objetivo armazenar e controlar os códigos da discipl
 - Aula 00 - Git e GitHub
 
 - Aula 01 - Introdução ao Python 
+
+- Aula 02 - Estruturas de controle
