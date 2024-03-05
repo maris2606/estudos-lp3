@@ -1,8 +1,8 @@
-#Estudos Linguagem de Programação 3
+# Estudos Linguagem de Programação 3
 
 Este repositório tem como objetivo armazenar e controlar os códigos da disciplina linguagem de programação 3 (LP3)
 
-##Aulas
+## Aulas
 
 - Aula 00 - Git e GitHub
 
