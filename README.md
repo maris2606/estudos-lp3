@@ -9,3 +9,5 @@ Este repositório tem como objetivo armazenar e controlar os códigos da discipl
 - Aula 01 - Introdução ao Python 
 
 - Aula 02 - Estruturas de controle
+
+- Aula 03 - 
