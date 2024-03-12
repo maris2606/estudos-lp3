@@ -10,4 +10,4 @@ Este repositório tem como objetivo armazenar e controlar os códigos da discipl
 
 - Aula 02 - Estruturas de controle
 
-- Aula 03 - 
+- Aula 03 - Aula operadores
