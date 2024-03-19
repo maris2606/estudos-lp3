@@ -70,3 +70,48 @@ dias = {
 if dia in dias:
     print(dias[dia])
 
+# operador ternário
+idade = 20
+
+# sera maior ou menor de idade dependendo da idade
+# if idade>= 18:
+#     status = "maior de idade"
+# else
+#     status = "menor de idade" 
+
+status = "maior de idade" if idade >= 18 else "menor de idade"
+
+# match case
+# python 3.10
+# melhor que o switch case
+
+dia = 3
+
+match dia:
+    case 1:
+        print('domingo')    
+    case 2:
+        print('segunda')    
+    case 3:
+        print('terca')   
+    case 4:
+        print('quarta')    
+    case 5:
+        print('quinta')
+    case 6:
+        print('sexta')
+    case 7:
+        print('sabado')
+    case _:
+        print('invalido')
+
+# imprimir
+# 1 e 7 - fim de semana
+# 2 3 4 5 6 - dia útil
+match dia :
+    case 1 | 7:
+        print('fim de semana')
+    case 2|3|4|5|6:
+        print('dia útil')
+    case _:
+        print('dia inválido')
