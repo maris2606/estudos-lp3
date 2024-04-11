@@ -2,9 +2,8 @@
 # O programa começa com uma palavra oculta (o usuário não vê) e o usuário tenta adivinhar a palavra, letra por letra.
 # O usuário tem um número limitado de tentativas para adivinhar toda a palavra.
 
-palavra = ['l','a','t','o','r','r','e']
-
-palavra_original = ['l','a','t','o','r','r','e'] # guarda a palavra original para exibir ao final do jogo
+palavra_original = 'latorre' # guarda a palavra original para exibir ao final do jogo
+palavra = [letra for letra in palavra_original]
 forca = ['_','_','_','_','_','_','_']
 adivinhadas = []
 vidas = 3 # como não era especificado, coloquei 3 vidas
