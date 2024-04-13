@@ -2,34 +2,48 @@
 # O programa deve pedir ao usuário para votar várias vezes e, no final, 
 # mostrar o número de votos de cada candidato e quem foi o vencedor
 
-candidato1 = 0
-candidato2 = 0
-candidato3 = 0
-
 pessoas = int(input('quantas pessoas irão votar? '))
-i = 0
 
-while i < pessoas:
-    voto = int(input('digite o número de seu candidato (1-João, 2-Ana, 3-Maria): '))
+def votacao(pessoas):
+    candidato1 = 0
+    candidato2 = 0
+    candidato3 = 0
 
-    match voto:
-        case 1:
-            candidato1 +=1
-        case 2:
-            candidato2 +=1
-        case 3:
-            candidato3 +=1
-        case _:
-            print('candidato inválido, digite novamente:')
-            i-=1
-    i+=1
+    i = 0
+    while i < pessoas:
+        voto = int(input('digite o número de seu candidato (1-João, 2-Ana, 3-Maria): '))
 
-print(f'número de votos: \nJoão: {candidato1}\nAna: {candidato2}\nMaria: {candidato3}')
+        match voto:
+            case 1:
+                candidato1 +=1
+            case 2:
+                candidato2 +=1
+            case 3:
+                candidato3 +=1
+            case _:
+                print('candidato inválido, digite novamente:')
+                i-=1
+        i+=1
 
-if candidato1>candidato2 and candidato1>candidato3:
-    print(f'o vencedor é o João!')
-elif candidato2>candidato1 and candidato2>candidato3:
-    print(f'a vencedora é a Ana!')
+    if candidato1>candidato2 and candidato1>candidato3:
+        return ('João', candidato1, candidato2, candidato3)
+    
+    elif candidato2>candidato1 and candidato2>candidato3:
+        return ('Ana', candidato1, candidato2, candidato3)
+    
+    elif candidato3>candidato1 and candidato3>candidato2:
+        return ('Maria', candidato1, candidato2, candidato3)
+
+    else:
+        return ('Empate', candidato1, candidato2, candidato3)
+
+resultado_votacao = votacao(pessoas) 
+
+if resultado_votacao[0] == 'Empate':
+    print('\nNão houve vencedor. Houve empate.')
 else:
-    print(f'a vencedora é a Maria!')
+    print(f'\nO vencedor foi o candidato(a) {resultado_votacao[0]}')
+
+print(f'\nnúmero de votos: \nJoão: {resultado_votacao[1]}\nAna: {resultado_votacao[2]}\nMaria: {resultado_votacao[3]}')
+
 

@@ -2,6 +2,9 @@
 
 numero = int(input('digite um número: '))
 
+def tabuada (numero): # retorna lista com as multiplicações e resultados
+    return [(f'{numero} * {i} = {numero * i}') for i in range(1, 11)]
+
 print('Tabuada:')
-for i in range(1, 11):
-    print(f'{numero} * {i} = {numero * i}')
+for mult in tabuada(numero):
+    print(mult)

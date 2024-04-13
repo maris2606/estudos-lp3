@@ -10,16 +10,19 @@
 
 pontuacao = int(input('insira uma pontuação de 0 a 100: '))/10
 
-if pontuacao <= 10 and pontuacao>=0:
-    if pontuacao == 10:
-        print('Nota: A')
-    elif pontuacao >= 7.5:
-        print('Nota: B')
-    elif pontuacao >= 5:
-        print('Nota: C')
-    elif pontuacao >= 2:
-        print('Nota: D')
+def conversor_de_nota(pontuacao):
+    if pontuacao <= 10 and pontuacao>=0:
+        if pontuacao == 10:
+            return 'Nota: A'
+        elif pontuacao >= 7.5:
+            return 'Nota: B'
+        elif pontuacao >= 5:
+            return 'Nota: C'
+        elif pontuacao >= 2:
+            return 'Nota: D'
+        else:
+            return 'Nota: F'
     else:
-        print('Nota: F')
-else:
-    print('nota inválida')
+        return 'nota inválida'
+
+print(conversor_de_nota(pontuacao))
