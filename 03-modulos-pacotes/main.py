@@ -73,3 +73,7 @@ valores = [10, 9]
 
 print(media(valores))
 print(VALOR)
+
+
+# não é muito boa prática sair da pasta 
+# from ..matematica import soma
